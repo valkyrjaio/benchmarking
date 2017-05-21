@@ -6,4 +6,6 @@ cd /var/www/silex/framework
 
 composer install --no-dev --optimize-autoloader
 
+chmod -R 777 var/
+
 echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/silex/framework/web/index.php
