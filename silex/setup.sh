@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd /var/www
+git clone https://github.com/silexphp/Silex-Skeleton.git /var/www/silex/framework
 
-git clone https://github.com/silexphp/Silex-Skeleton.git ./silex
-
-cd silex
+cd /var/www/silex/framework
 
 composer install --no-dev --optimize-autoloader
+
+echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/silex/framework/public/index.php

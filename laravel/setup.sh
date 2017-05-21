@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd /var/www
+git clone https://github.com/laravel/laravel.git /var/www/laravel/framework
 
-git clone https://github.com/laravel/laravel.git ./laravel
+cp /var/www/laravel/.env /var/www/laravel/framework
 
-cd laravel
+cd /var/www/laravel/framework
 
 composer install --no-dev --optimize-autoloader
 
@@ -13,3 +13,5 @@ sudo chmod o+w storage/framework/*
 php artisan optimize --force
 php artisan config:cache
 php artisan route:cache
+
+echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/laravel/framework/public/index.php

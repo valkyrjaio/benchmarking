@@ -1,12 +1,12 @@
 #!/bin/bash
 
-cd /var/www
+git clone https://github.com/laravel/lumen.git /var/www/lumen/framework
 
-git clone https://github.com/laravel/lumen.git ./lumen
-
-cd lumen
+cd /var/www/lumen/framework
 
 composer install --no-dev --optimize-autoloader
 
 chmod o+w storage/*
 chmod o+w storage/framework/*
+
+echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/lumen/framework/public/index.php

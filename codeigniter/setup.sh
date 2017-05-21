@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd /var/www
+git clone https://github.com/bcit-ci/CodeIgniter.git /var/www/codeigniter/framework
 
-git clone https://github.com/bcit-ci/CodeIgniter.git ./codeigniter
-
-cd codeigniter
+cd /var/www/codeigniter/framework
 
 composer install --no-dev --optimize-autoloader
+
+echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/codeigniter/framework/index.php
