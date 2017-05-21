@@ -2,6 +2,6 @@
 
 echo "127.0.0.1 valkyrja.localhost" >> /etc/hosts
 
-cp ./nginx.conf /etc/nginx/sites-enabled/valkyrja
+cp /var/www/valkyrja/nginx.conf /etc/nginx/sites-enabled/valkyrja
 
 setup.sh
