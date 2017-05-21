@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf lumen
 
-./setup.sh
+./lumen/setup.sh
+./restart-services.sh

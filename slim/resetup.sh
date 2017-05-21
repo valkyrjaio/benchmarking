@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf slim
 
-./setup.sh
+./slim/setup.sh
+./restart-services.sh

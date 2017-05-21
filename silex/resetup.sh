@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf silex
 
-./setup.sh
+./silex/setup.sh
+./restart-services.sh

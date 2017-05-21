@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf codeigniter
 
-./setup.sh
+./codeigniter/setup.sh
+./restart-services.sh

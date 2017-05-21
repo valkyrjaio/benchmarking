@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf valkyrja
 
-./setup.sh
+./valkyrja/setup.sh
+./restart-services.sh

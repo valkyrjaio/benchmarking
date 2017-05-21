@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf zend
 
-./setup.sh
+./zend/setup.sh
+./restart-services.sh

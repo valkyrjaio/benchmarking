@@ -4,4 +4,5 @@ cd /var/www
 
 rm -rf laravel
 
-./setup.sh
+./laravel/setup.sh
+./restart-services.sh
