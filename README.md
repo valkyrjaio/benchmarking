@@ -25,18 +25,18 @@ Note: If you choose to use "install-server.sh" there is one major assumption; Yo
 
 ## Usage
 
-Using this project is quite simple. Follow the following steps:
+Using this project is quite simple. Follow these steps:
 
-1) Install this repo into your server via git clone https://github.com/valkyrjaio/benchmark.git /benchmarks
-2) Run ./install.sh OR ./install-server.sh depending on your server meeting the aforementioned assumptions.
-3) Run ./warmup.sh to warmup the opcache and get the best results.
+1) Install this repo into your server via "git clone https://github.com/valkyrjaio/benchmark.git /benchmarks"
+2) Run "./install.sh" OR "./install-server.sh" depending on your server meeting the aforementioned assumptions.
+3) Run "./warmup.sh" to warmup the opcache and get the best results.
 4) At this stage it is recommended you check the Nginx error log to ensure everything was setup properly and running appropriately "cat /var/log/nginx/error.log"
 5) It is recommended you clear your CLI window at this stage in order to have only the results of the next step without additional clutter "clear"
 6) Run ./benchmarks.sh
--- This will run three tests
---- ab -n 10 -c 3 <url>
---- ab -n 1000 -c 100 <url>
---- ab -n 10000 -c 100 <url>
+- This will run three tests
+  - ab -n 10 -c 3 <url>
+  - ab -n 1000 -c 100 <url>
+  - ab -n 10000 -c 100 <url>
 
 ## Our Results
 
