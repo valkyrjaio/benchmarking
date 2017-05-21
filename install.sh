@@ -8,3 +8,6 @@
 ./symfony/install.sh
 ./valkyrja/install.sh
 ./zend/install.sh
+
+mkdir ./benchmarks/
+chmod -R 777 ./benchmarks/
