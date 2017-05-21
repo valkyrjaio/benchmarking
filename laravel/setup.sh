@@ -2,7 +2,7 @@
 
 git clone https://github.com/laravel/laravel.git /var/www/laravel/framework
 
-cp /var/www/laravel/.env /var/www/laravel/framework
+cp /var/www/laravel/config/.env /var/www/laravel/framework
 
 cd /var/www/laravel/framework
 
