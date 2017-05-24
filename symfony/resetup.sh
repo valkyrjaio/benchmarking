@@ -1,8 +1,9 @@
 #!/bin/bash
 
+rm -rf framework
+
+./setup.sh
+
 cd /var/www
 
-rm -rf symfony
-
-./symfony/setup.sh
 ./restart-services.sh

@@ -1,8 +1,9 @@
 #!/bin/bash
 
+rm -rf framework
+
+./setup.sh
+
 cd /var/www
 
-rm -rf zend
-
-./zend/setup.sh
 ./restart-services.sh

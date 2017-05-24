@@ -1,8 +1,9 @@
 #!/bin/bash
 
+rm -rf framework
+
+./setup.sh
+
 cd /var/www
 
-rm -rf laravel
-
-./laravel/setup.sh
 ./restart-services.sh
