@@ -6,4 +6,6 @@ cd /var/www/valkyrja/framework
 
 composer install --no-dev --optimize-autoloader
 
+php valkyrja cache:all
+
 echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/valkyrja/framework/public/index.php
