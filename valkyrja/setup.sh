@@ -5,6 +5,7 @@ git clone https://github.com/valkyrjaio/valkyrja-app.git /var/www/valkyrja/frame
 cd /var/www/valkyrja/framework
 
 cp config/EnvExample.php config/Env.php
+rm -f config/EnvExample.php
 
 composer install --no-dev --optimize-autoloader
 
