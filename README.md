@@ -44,13 +44,13 @@ We've run this on our own on two AWS servers, m4.large and m4.xlarge and compile
 
 ### Results Breakdown
 
-The breakdown is as follows in terms of Requests Per Second
-
-- Codeigniter
-- Valkyrja
-- Lumen
-- Slim
-- Silex
-- Symfony
-- Zend
-- Laravel
+|Framework          |Requests/Second|Memory Usage|Time/Request|Files Loaded|
+|-------------------|--------------:|-----------:|-----------:|-----------:|
+|CodeIgniter        |        2232.97|    0.437176|    0.000995|          27|
+|Valkyrja           |        1849.57|     0.68084|    0.001458|          55|
+|Lumen              |        1498.91|    0.678144|    0.005488|          41|
+|Slim               |        1234.29|     0.63392|    0.002515|          74|
+|Silex              |         793.92|       0.898|    0.004466|         136|
+|Symfony            |         419.24|    1.658664|     0.01286|         312|
+|Zend               |         355.99|    1.301904|   0.0071864|         211|
+|Laravel            |         216.56|    1.612224|    0.010219|         200|
