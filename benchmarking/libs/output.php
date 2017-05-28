@@ -8,7 +8,7 @@ if (isset($_GET['benchmark'])) {
     file_put_contents(
         '/var/www/benchmarks/' . explode('/', realpath('./'))[3],
         sprintf(
-            "%' 8d:%f:%d\n\n%d",
+            "%' 8d:%f:%d\n\n%s",
             $memory,
             $time,
             // One less than total because this file was included
