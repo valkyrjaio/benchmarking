@@ -9,7 +9,7 @@ rm -f config/EnvExample.php
 
 composer install --no-dev --optimize-autoloader
 
-php valkyrja cache:all
+php valkyrja optimize
 
 sed -i "17i public const CONFIG_USE_CACHE_FILE = true;" config/Env.php
 
