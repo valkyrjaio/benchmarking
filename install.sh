@@ -11,3 +11,5 @@
 
 mkdir ./benchmarks/
 chmod -R 777 ./benchmarks/
+
+./restard-services.sh
