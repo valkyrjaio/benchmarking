@@ -8,29 +8,29 @@ apt-get update
 
 apt-get -y --reinstall --allow-unauthenticated install nginx
 
-apt-get -y --reinstall --allow-unauthenticated install php7.1
+apt-get -y --reinstall --allow-unauthenticated install php7.4
 
-# Install php7.1-fpm with needed extensions
-apt-get -y --reinstall --allow-unauthenticated install php7.1-fpm
-apt-get -y --reinstall --allow-unauthenticated install php7.1-cli
-apt-get -y --reinstall --allow-unauthenticated install php7.1-common
-apt-get -y --reinstall --allow-unauthenticated install php7.1-json
-apt-get -y --reinstall --allow-unauthenticated install php7.1-opcache
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-mysql
-apt-get -y --reinstall --allow-unauthenticated install php7.1-phpdbg
-apt-get -y --reinstall --allow-unauthenticated install php7.1-mbstring
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-imap
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-ldap
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-pgsql
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-pspell
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-recode
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-tidy
-apt-get -y --reinstall --allow-unauthenticated install php7.1-dev
-#apt-get -y --reinstall --allow-unauthenticated install php7.1-intl
-apt-get -y --reinstall --allow-unauthenticated install php7.1-gd
-apt-get -y --reinstall --allow-unauthenticated install php7.1-curl
-apt-get -y --reinstall --allow-unauthenticated install php7.1-zip
-apt-get -y --reinstall --allow-unauthenticated install php7.1-xml
+# Install php7.4-fpm with needed extensions
+apt-get -y --reinstall --allow-unauthenticated install php7.4-fpm
+apt-get -y --reinstall --allow-unauthenticated install php7.4-cli
+apt-get -y --reinstall --allow-unauthenticated install php7.4-common
+apt-get -y --reinstall --allow-unauthenticated install php7.4-json
+apt-get -y --reinstall --allow-unauthenticated install php7.4-opcache
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-mysql
+apt-get -y --reinstall --allow-unauthenticated install php7.4-phpdbg
+apt-get -y --reinstall --allow-unauthenticated install php7.4-mbstring
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-imap
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-ldap
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-pgsql
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-pspell
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-recode
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-tidy
+apt-get -y --reinstall --allow-unauthenticated install php7.4-dev
+#apt-get -y --reinstall --allow-unauthenticated install php7.4-intl
+apt-get -y --reinstall --allow-unauthenticated install php7.4-gd
+apt-get -y --reinstall --allow-unauthenticated install php7.4-curl
+apt-get -y --reinstall --allow-unauthenticated install php7.4-zip
+apt-get -y --reinstall --allow-unauthenticated install php7.4-xml
 #apt-get -y --reinstall --allow-unauthenticated install php-xdebug
 
 ./install.sh
