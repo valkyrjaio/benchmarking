@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/codeigniter/framework
+
 git clone https://github.com/bcit-ci/CodeIgniter.git /var/www/codeigniter/framework
 
 cd /var/www/codeigniter/framework

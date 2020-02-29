@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/valkyrja/framework
+
 git clone https://github.com/valkyrjaio/valkyrja-app.git /var/www/valkyrja/framework
 
 cd /var/www/valkyrja/framework
@@ -10,7 +12,5 @@ rm -f env/Env.example.php
 composer install --no-dev --optimize-autoloader
 
 php valkyrja optimize
-
-sed -i "17i public const CONFIG_USE_CACHE_FILE = true;" env/Env.php
 
 echo "require '/var/www/benchmarking/libs/output.php';" >> /var/www/valkyrja/framework/public/index.php

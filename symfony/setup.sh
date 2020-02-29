@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/symfony/framework
+
 git clone https://github.com/symfony/symfony-standard.git /var/www/symfony/framework
 
 cd /var/www/symfony/framework

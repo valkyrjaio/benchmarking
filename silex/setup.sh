@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/silex/framework
+
 git clone https://github.com/silexphp/Silex-Skeleton.git /var/www/silex/framework
 
 cd /var/www/silex/framework

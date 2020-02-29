@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/lumen/framework
+
 git clone https://github.com/laravel/lumen.git /var/www/lumen/framework
 
 cd /var/www/lumen/framework

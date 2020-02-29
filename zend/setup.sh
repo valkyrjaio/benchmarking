@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/zend/framework
+
 git clone https://github.com/zendframework/ZendSkeletonApplication.git /var/www/zend/framework
 
 cd /var/www/zend/framework

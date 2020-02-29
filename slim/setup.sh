@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /var/www/slim/framework
+
 git clone https://github.com/slimphp/Slim-Skeleton.git /var/www/slim/framework
 
 cd /var/www/slim/framework
