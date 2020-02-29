@@ -9,6 +9,8 @@ cd /var/www/valkyrja/framework
 cp env/Env.example.php env/Env.php
 rm -f env/Env.example.php
 
+cp /var/www/valkyrja/routes/default.php /var/www/valkyrja/framework/bootstrap/routes/default.php
+
 composer install --no-dev --optimize-autoloader
 
 php valkyrja optimize
