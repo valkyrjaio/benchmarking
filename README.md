@@ -37,20 +37,25 @@ Using this project is quite simple. Follow these steps:
 
 ## Our Results
 
-We've run this on our own on two AWS servers, m4.large and m4.xlarge and compiled the results to a Google Doc and Google Spreadsheet
+We've run this on our own on two AWS servers, t2.xlarge and compiled the results to a Google Doc and Google Spreadsheet
 
 - Google Doc: https://docs.google.com/document/d/104iLanbdctwN5rZPbvvHKm9EWgMHLci3DbNoFOheJjs/edit
 - Google Spreadsheet: https://docs.google.com/spreadsheets/d/1CZr-xIzlPedE-k5naAmRTf88SOE6B8vn9GcZG3gY2WA/edit
 
 ### Results Breakdown
 
-|Framework          |Requests/Second|Memory Usage|Time/Request|Files Loaded|
-|-------------------|--------------:|-----------:|-----------:|-----------:|
-|CodeIgniter        |        2232.97|    0.437176|    0.000995|          27|
-|Valkyrja           |        1849.57|     0.68084|    0.001458|          55|
-|Lumen              |        1498.91|    0.678144|    0.005488|          41|
-|Slim               |        1234.29|     0.63392|    0.002515|          74|
-|Silex              |         793.92|       0.898|    0.004466|         136|
-|Symfony            |         419.24|    1.658664|     0.01286|         312|
-|Zend               |         355.99|    1.301904|   0.0071864|         211|
-|Laravel            |         216.56|    1.612224|    0.010219|         200|
+|Framework            |Requests/Second|Memory Usage|Time/Request|Files Loaded|
+|---------------------|--------------:|-----------:|-----------:|-----------:|
+|CodeIgniter***       |        6060.19|      411000|    0.000595|          27|
+|Lumen* **            |        4331.55|      710792|    0.003474|          79|
+|Valkyrja (version)** |        4142.57|      752608|    0.001676|         103|
+|Slim* **             |        4041.30|      599536|    0.001786|         126|
+|Valkyrja             |        3839.67|      752608|    0.001808|         103|
+|Silex                |        2916.24|      740792|    0.002506|         146|
+|Symfony              |        1865.81|     1343984|    0.004068|         312|
+|Zend                 |        1823.19|     1179304|    0.003806|         204|
+|Laravel              |         953.60|     2204160|    0.006106|         277|
+
+* \* Does not render view
+* \*\* Does not dispatch to controller
+* \*\*\* No Composer autoloader
