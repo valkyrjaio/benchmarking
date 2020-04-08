@@ -47,9 +47,9 @@ We've run this on our own on two AWS servers, t2.xlarge and compiled the results
 |Framework            |Requests/Second|Memory Usage|Time/Request|Files Loaded|
 |---------------------|--------------:|-----------:|-----------:|-----------:|
 |CodeIgniter***       |        6060.19|      411000|    0.000595|          27|
-|Valkyrja (version)*  |        4862.39|      678448|    0.001416|          83|
+|Valkyrja (version)*  |        4968.40|      678448|    0.001416|          83|
+|Valkyrja             |        4411.13|      695416|    0.001296|          90|
 |Lumen* **            |        4331.55|      710792|    0.003474|          79|
-|Valkyrja             |        4288.95|      695416|    0.001296|          90|
 |Slim* **             |        4041.30|      599536|    0.001786|         126|
 |Silex                |        2916.24|      740792|    0.002506|         146|
 |Symfony              |        1865.81|     1343984|    0.004068|         312|

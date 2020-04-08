@@ -2,10 +2,10 @@
 
 use App\Http\Controllers\HomeController;
 use Valkyrja\Http\ResponseFactory;
-use Valkyrja\Routing\Facades\Router;
+use Valkyrja\Routing\Router;
 
-Router::withController(HomeController::class)->withName('home')->group(
-    static function (\Valkyrja\Routing\Router $router) {
+\Valkyrja\router()::withController(HomeController::class)->withName('home')->group(
+    static function (Router $router) {
         /**
          * Welcome Route.
          * - Example of a view being returned
