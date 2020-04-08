@@ -4,7 +4,7 @@ use App\Http\Controllers\HomeController;
 use Valkyrja\Http\ResponseFactory;
 use Valkyrja\Routing\Router;
 
-\Valkyrja\router()::withController(HomeController::class)->withName('home')->group(
+\Valkyrja\router()->withController(HomeController::class)->withName('home')->group(
     static function (Router $router) {
         /**
          * Welcome Route.
